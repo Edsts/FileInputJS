@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(to right, black, gray);
+    color: #323232;
+    font-weight: 300;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Helvetica neue, roboto;
+  }
+  
+  img { 
+    max-width: 400px;
+    max-height: 400px;
+    animation-name: animando;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animando{
+    0% { opacity: 1; }
+    10% { opacity: 0.7; }
+    20% { opacity: 0.4; }
+    30% { opacity: 0.3; }
+    40% { opacity: 0.2; }
+    50% { opacity: 0.1; }
+  }
+  
+  h1 {
+    font-weight: 200;
+    font-style: 26px;
+    margin: 30px;
+    color: white;
+  }

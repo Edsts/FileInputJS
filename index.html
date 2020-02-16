@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title> Brincando com o File upload </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="first">
+        <h1> Vamos brincar de troca de imagens, clique para trocar :)</h1>
+        <img id="image" onClick="fileInput.click()"
+            src="https://lh3.googleusercontent.com/proxy/ixt6d2rYke0uS042pN5o85Ql9EM5YU25Y9w26d7zEOl2d7l1ymKTnWKQQjBEf208_i4ip6ZUFYg_hMY28hrl8C7Amb6YvReHR6ds1-oTn6E">
+        <input type="file" #fileInput hidden name="fileInput" id="fileInput"
+            onChange="changeImage(event.target.files[0])">
+    </div>
+    <div>
+        <img id="image">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
